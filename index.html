@@ -1,8 +1,15 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-@@ -14,19 +13,20 @@
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Whitepaper for Gen Z</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -16,42 +23,45 @@
             width: 100%;
             padding: 20px;
             justify-content: space-between;
-            flex-wrap: wrap;
         }
         .text-section {
             max-width: 600px;
-            flex: 1 1 50%;
             width: 100%;
         }
         .small-title {
             font-size: 18px;
-@@ -50,10 +50,11 @@
+	@@ -50,10 +50,11 @@
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
             text-decoration: none;
             display: inline-block;
             margin-bottom: 20px;
         }
         .logo-section {
-            max-width: 400px;
-            flex: 1 1 50%;
             max-width: 100%;
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-@@ -66,11 +67,9 @@
+        }
+        .logo-section img {
+            max-width: 100%;
+            height: auto;
+        }
         /* Media Queries for Responsiveness */
         @media (max-width: 768px) {
             .content {
-                flex-direction: column;
                 text-align: center;
             }
             .text-section, .logo-section {
-                flex: 1 1 100%;
                 max-width: 100%;
             }
             .big-title {
-@@ -83,6 +82,9 @@
+                font-size: 28px;
+            }
+            .read-button {
+                padding: 12px 24px;
+                font-size: 16px;
+            }
         }
 
         @media (max-width: 480px) {
