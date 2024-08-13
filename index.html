@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,7 +23,6 @@
             max-width: 1200px;
             width: 100%;
             padding: 20px;
-            justify-content: space-between;
         }
         .text-section {
             max-width: 600px;
@@ -58,6 +58,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-top: 30px;
         }
         .logo-section img {
             max-width: 100%;
@@ -65,12 +66,30 @@
         }
 
         /* Media Queries for Responsiveness */
+        @media (min-width: 769px) {
+            .content {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .text-section {
+                max-width: 50%;
+                text-align: left;
+            }
+            .logo-section {
+                max-width: 50%;
+                margin-top: 0;
+            }
+            .logo-section img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
         @media (max-width: 768px) {
             .content {
+                flex-direction: column;
                 text-align: center;
-            }
-            .text-section, .logo-section {
-                max-width: 100%;
             }
             .big-title {
                 font-size: 28px;
@@ -78,6 +97,9 @@
             .read-button {
                 padding: 12px 24px;
                 font-size: 16px;
+            }
+            .logo-section {
+                margin-top: 40px;
             }
         }
 
@@ -94,6 +116,9 @@
             .read-button {
                 padding: 10px 20px;
                 font-size: 14px;
+            }
+            .logo-section {
+                margin-top: 50px;
             }
         }
     </style>
