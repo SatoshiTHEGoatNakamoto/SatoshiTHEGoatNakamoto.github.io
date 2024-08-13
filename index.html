@@ -58,7 +58,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 30px;
         }
         .logo-section img {
             max-width: 100%;
@@ -75,15 +74,15 @@
             .text-section {
                 max-width: 50%;
                 text-align: left;
-                margin-right: 40px; /* Add padding between text and logo */
+                margin-right: 40px; /* Padding between text and logo */
             }
             .logo-section {
                 max-width: 50%;
                 margin-top: 0;
+                justify-content: flex-end;
             }
             .logo-section img {
-                max-width: 100%;
-                height: auto;
+                max-width: 80%; /* Adjust logo size on desktop */
             }
         }
 
@@ -100,7 +99,11 @@
                 font-size: 16px;
             }
             .logo-section {
-                margin-top: 40px;
+                margin-top: 20px; /* Padding between button and logo on mobile */
+                margin-bottom: 20px;
+            }
+            .logo-section img {
+                max-width: 50%; /* Make the logo smaller on mobile */
             }
         }
 
@@ -119,11 +122,15 @@
                 font-size: 14px;
             }
             .logo-section {
-                margin-top: 50px;
+                margin-top: 30px; /* Extra padding on smaller screens */
+            }
+            .logo-section img {
+                max-width: 60%; /* Make the logo smaller on small screens */
             }
         }
     </style>
 </head>
+    
 <body>
     <div class="content">
         <div class="text-section">
