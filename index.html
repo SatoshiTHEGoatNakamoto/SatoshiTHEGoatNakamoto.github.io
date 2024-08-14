@@ -100,6 +100,18 @@
             font-size: 20px;
             color: #333;
             margin-top: 20px; /* Adjust the margin to fit your layout */
+            font-style: italic;
+            text-align: center;
+        }
+        .quote::before, .quote::after {
+            content: '"';
+            font-size: 24px; /* Adjust the size of the quotation marks */
+        }
+        .quote-attribution {
+            font-size: 18px;
+            color: #555;
+            margin-top: 10px; /* Space between the quote and the attribution */
+            font-style: normal;
         }
 
         /* Media Queries for Responsiveness */
@@ -188,8 +200,11 @@
             <div class="small-title">Bitcoin Whitepaper for Gen Z. No Cap. fr. &#x1F525;</div>
             <div class="big-title">Bitcoin: A Homie-to-Homie Digital Cash Vibe</div>
             <a href="https://bitcoinforgenz.org/Bitcoin-Whitepaper-For-Gen-Z.pdf" target="_blank" class="read-button">Read the Whitepaper</a>
-            <!-- Quote added here -->
-            <div class="quote">Lowkey, you might wanna cop some, just in case it blows up. If everyone vibes with it, it’s gonna be a whole thing, fr.</div>
+            <!-- Quote added here with attribution -->
+            <div class="quote">
+                Lowkey, you might wanna cop some, just in case it blows up. If everyone vibes with it, it’s gonna be a whole thing, fr.
+            </div>
+            <div class="quote-attribution">— Satoshi THE GOAT Nakamoto</div>
         </div>
         <div class="logo-section">
             <img src="https://www.bitcoinforgenz.org/homepage_image.png" alt="Bitcoin Logo">
