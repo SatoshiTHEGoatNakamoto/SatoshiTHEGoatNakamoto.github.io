@@ -49,8 +49,8 @@
         }
         .content {
             display: flex;
-            flex-direction: column;
-            align-items: flex-start; /* Align content to the left */
+            flex-direction: row; /* Arrange content in a row for desktop */
+            align-items: center;
             max-width: 1200px;
             width: 100%;
             padding: 20px;
@@ -58,17 +58,20 @@
         .text-section {
             max-width: 600px;
             width: 100%;
+            margin-right: 40px; /* Space between text and logo */
         }
         .small-title {
             font-size: 18px;
             color: #777;
             margin-bottom: 10px;
+            text-align: left; /* Left-align text on desktop */
         }
         .big-title {
             font-size: 36px;
             font-weight: bold;
             color: #222;
             margin-bottom: 20px;
+            text-align: left; /* Left-align text on desktop */
         }
         .read-button {
             background-color: #F8920E;
@@ -82,9 +85,10 @@
             text-decoration: none;
             display: inline-block;
             margin-bottom: 20px;
+            text-align: left; /* Left-align text on desktop */
         }
         .logo-section {
-            max-width: 100%;
+            max-width: 600px;
             width: 100%;
             display: flex;
             justify-content: center;
@@ -101,6 +105,7 @@
             color: #333;
             margin-top: 20px;
             font-style: italic;
+            text-align: left; /* Left-align quote on desktop */
         }
         .quote::before, .quote::after {
             content: '"';
@@ -109,20 +114,17 @@
         .quote-attribution {
             font-size: 18px; /* Larger font size for attribution */
             color: #555;
-            margin-top: 10px; /* Increased space between quote and attribution */
+            margin-top: 10px; /* Space between quote and attribution */
             font-style: normal;
+            text-align: left; /* Left-align attribution on desktop */
         }
 
         /* Media Queries for Responsiveness */
         @media (min-width: 769px) {
             .content {
-                flex-direction: column;
+                flex-direction: row; /* Row direction for desktop */
                 text-align: left;
                 align-items: flex-start; /* Align all content to the left on desktop */
-            }
-            .text-section {
-                text-align: left;
-                margin-right: 40px; /* Padding between text and logo */
             }
             .logo-section {
                 max-width: 50%;
@@ -131,12 +133,6 @@
             }
             .logo-section img {
                 max-width: 80%; /* Adjust logo size on desktop */
-            }
-            .quote {
-                text-align: left; /* Align the quote to the left under the button */
-            }
-            .quote-attribution {
-                text-align: left; /* Align the attribution to the left */
             }
         }
 
@@ -154,7 +150,7 @@
                 font-size: 16px;
             }
             .logo-section {
-                order: 1;
+                order: 2; /* Move logo below titles and button */
                 margin-top: 20px; /* Padding between button and logo on mobile */
                 margin-bottom: 20px;
             }
@@ -173,7 +169,7 @@
             }
             /* Ensure quote is below the logo */
             .quote, .quote-attribution {
-                order: 2;
+                order: 3;
             }
         }
 
@@ -209,7 +205,7 @@
             }
             /* Ensure quote is below the logo */
             .quote, .quote-attribution {
-                order: 2;
+                order: 3;
             }
         }
     </style>
