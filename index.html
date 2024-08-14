@@ -63,12 +63,14 @@
             font-size: 18px;
             color: #777;
             margin-bottom: 10px;
+            text-align: left;
         }
         .big-title {
             font-size: 36px;
             font-weight: bold;
             color: #222;
             margin-bottom: 20px;
+            text-align: left;
         }
         .read-button {
             background-color: #F8920E;
@@ -97,21 +99,22 @@
 
         /* New Style for the Quote */
         .quote {
-            font-size: 15px;
+            font-size: 16px;
             color: #333;
-            margin-top: 20px; /* Adjust the margin to fit your layout */
+            margin-top: 20px;
             font-style: italic;
             text-align: left;
         }
         .quote::before, .quote::after {
             content: '"';
-            font-size: 24px; /* Adjust the size of the quotation marks */
+            font-size: 20px;
         }
         .quote-attribution {
-            font-size: 18px;
+            font-size: 14px;
             color: #555;
-            margin-top: 10px; /* Space between the quote and the attribution */
+            margin-top: 5px;
             font-style: normal;
+            text-align: left;
         }
 
         /* Media Queries for Responsiveness */
@@ -133,11 +136,6 @@
             }
             .logo-section img {
                 max-width: 80%; /* Adjust logo size on desktop */
-            }
-            .quote {
-                max-width: 600px;
-                text-align: center;
-                margin-top: 40px; /* Adjust the margin to fit your layout */
             }
         }
 
@@ -162,8 +160,14 @@
                 max-width: 50%; /* Make the logo smaller on mobile */
             }
             .quote {
-                font-size: 18px;
-                margin-top: 30px; /* Adjust the margin to fit your layout */
+                text-align: center;
+                font-size: 14px;
+                margin-top: 10px; /* Adjust the margin to fit your layout */
+            }
+            .quote-attribution {
+                text-align: center;
+                font-size: 12px;
+                margin-top: 3px; /* Adjust margin between quote and attribution */
             }
         }
 
@@ -188,8 +192,14 @@
                 max-width: 60%; /* Make the logo smaller on small screens */
             }
             .quote {
-                font-size: 16px;
-                margin-top: 20px; /* Adjust the margin to fit your layout */
+                text-align: center;
+                font-size: 14px;
+                margin-top: 15px; /* Adjust the margin to fit your layout */
+            }
+            .quote-attribution {
+                text-align: center;
+                font-size: 12px;
+                margin-top: 5px; /* Adjust margin between quote and attribution */
             }
         }
     </style>
