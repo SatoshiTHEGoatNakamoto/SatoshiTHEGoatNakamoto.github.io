@@ -110,9 +110,9 @@
             font-size: 20px;
         }
         .quote-attribution {
-            font-size: 14px;
+            font-size: 18px; /* Larger font size for attribution */
             color: #555;
-            margin-top: 5px;
+            margin-top: 10px; /* Increased space between quote and attribution */
             font-style: normal;
             text-align: left;
         }
@@ -162,12 +162,12 @@
             .quote {
                 text-align: center;
                 font-size: 14px;
-                margin-top: 10px; /* Adjust the margin to fit your layout */
+                margin-top: 15px; /* Adjust the margin to fit your layout */
             }
             .quote-attribution {
                 text-align: center;
-                font-size: 12px;
-                margin-top: 3px; /* Adjust margin between quote and attribution */
+                font-size: 16px; /* Larger font size for attribution */
+                margin-top: 10px; /* Increased space between quote and attribution */
             }
         }
 
@@ -198,8 +198,12 @@
             }
             .quote-attribution {
                 text-align: center;
-                font-size: 16px;
-                margin-top: 10px; /* Adjust margin between quote and attribution */
+                font-size: 16px; /* Larger font size for attribution */
+                margin-top: 10px; /* Increased space between quote and attribution */
+            }
+            /* Ensure quote is below the logo */
+            .quote, .quote-attribution {
+                order: 2;
             }
         }
     </style>
@@ -210,15 +214,15 @@
             <div class="small-title">Bitcoin Whitepaper for Gen Z. No Cap. fr. &#x1F525;</div>
             <div class="big-title">Bitcoin: A Homie-to-Homie Digital Cash Vibe</div>
             <a href="https://bitcoinforgenz.org/Bitcoin-Whitepaper-For-Gen-Z.pdf" target="_blank" class="read-button">Read the Whitepaper</a>
-            <!-- Quote added here with attribution -->
-            <div class="quote">
-                Lowkey, you might wanna cop some, just in case it blows up. If everyone vibes with it, it’s gonna be a whole thing, fr.
-            </div>
-            <div class="quote-attribution">— Satoshi THE GOAT Nakamoto</div>
         </div>
         <div class="logo-section">
             <img src="https://www.bitcoinforgenz.org/homepage_image.png" alt="Bitcoin Logo">
         </div>
+        <!-- Quote added here with attribution -->
+        <div class="quote">
+            Lowkey, you might wanna cop some, just in case it blows up. If everyone vibes with it, it’s gonna be a whole thing, fr.
+        </div>
+        <div class="quote-attribution">— Satoshi THE GOAT Nakamoto</div>
     </div>
 </body>
 </html>
